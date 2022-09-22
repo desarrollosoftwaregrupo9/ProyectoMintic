@@ -1,0 +1,42 @@
+h1{
+    width: 382px;
+    font-family: serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #6d9ab8;
+    padding: 5px 3px;
+    border-radius: 5px;
+}
+
+form{
+    width: 350px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #6d9ab8;
+}
+
+table input{
+    padding: 5px 10px;
+    border: 8px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 15px 30px;
+    text-align: center;   
+    
+}
+    
+select{
+    padding: 8px 27px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    margin: 8px 10px;
+}
+
+button{
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #377ba8;
+    padding: 5px 8px;
+    border-radius: 5px;
+}

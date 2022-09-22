@@ -1,0 +1,63 @@
+h1{
+    font-family: serif;
+    text-align: center;
+    padding: 1px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #6d9ab8;
+    font-weight: bolder;
+}
+
+body,html{
+    align-content: center;
+    height: 90%;
+    width: 90%;
+    margin: 0px auto;
+    font-family: serif;
+    padding: 5px;            
+}
+
+.icon{
+    width: 5%;
+}
+
+.contenido{
+    background-color: #6d9ab8;
+    position: relative;
+    height: 90%;
+    width: 100%;
+    margin: 0px auto;
+    font-family: serif;
+    border-radius: 10px;
+}
+
+.btn-crear-user{
+    margin: 2%;
+}
+
+.btn-consultar{
+    margin: 2%;
+}
+
+.form{
+
+    font-family: serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #84abc4;
+    border-radius: 10px;
+    text-align: justify;
+
+}
+
+
+
+.salir{
+    background-color: #ff000080;
+    color: whitesmoke;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: serif;
+    float: right;
+}

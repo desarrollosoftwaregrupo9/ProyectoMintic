@@ -1,0 +1,99 @@
+h1{
+    font-family: serif;
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #6d9ab8;
+    font-weight: bolder;
+}
+
+body,html{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    margin: 0px auto;
+    font-family: serif;
+    padding: 5px;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    font-family: serif;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+    font-size: 17px;
+    font-family: serif;
+
+}
+
+.tab button:hover {
+    background-color: darkgrey;
+    font-family: serif;
+}
+
+.tab button.active {
+    background-color: darkgray;
+    font-family: serif;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: rgb(131, 202, 243);
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    font-family: serif;
+}
+
+table {
+    font-family: serif;
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid #030000;
+    text-align: center;
+    padding: 5px;
+}
+/* color para el fondo de los elementos n+2 de la tabla */
+tr:nth-child(n+2) {
+    background-color: #dddddd;
+    font-family: serif;
+}
+
+textarea{
+    width: 100%;
+    font-family: serif;
+}
+
+.salir{
+    background-color: #ff000080;
+    color: whitesmoke;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: serif;
+    float: right;
+}

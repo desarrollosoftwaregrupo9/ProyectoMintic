@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="EstiloVistaPaciente.css"/>
+
+</head>
+<body>
+
+  <div>
+  <h1><img src="paciente.png" class="paciente"/>     PACIENTES</h1></div> 
+  
+  
+  <button class="tablink" onclick="openPage('Agendar', this, 'rgb(131, 202, 243)')" id ="defaultOpen">Agendar</button>
+  <button class="tablink" onclick="openPage('Valoracion', this, 'lightblue')">Valoracion</button>
+
+  <div id="Agendar" class="tabcontent">
+    <h3>Agendar</h3>
+
+    <p> Tipo Cita:  
+      <select>
+          <option></option>
+          <option>Consulta General</option>
+          <option>Especialidad</option>
+          <option>Laboratorios</option> 
+      </select></p><br>
+
+    <label for="start">Seleccione Fecha Cita:</label>
+
+    <input type="date" id="start" name="trip-start"
+           value="2021-12-31"
+           min="2021-01-01" max="2025-12-31">
+
+    <label for="appt">Hora Cita:</label>
+
+    <input type="time" id="appt" name="appt"
+    min="09:00" max="18:00" required>
+              
+
+    </div>
+
+    <div id="Valoracion" class="tabcontent">
+    <h3>Consultar su valoracion clinica</h3>
+    <label for="start">Seleccione Fecha Cita:</label>
+    <input type="date" id="start" name="trip-start"
+           value="2021-12-31"
+          min="2021-01-01" max="2025-12-31">
+    
+    <button type="submit" value="consultar">CONSULTAR</button><br><br>
+    <textarea id="textarea" name="textarea" rows="25" cols="55">Valoracion</textarea>
+    </div>
+
+      
+
+<script>
+  function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  
+<div style ="text-align: right;">
+  <button class= "salir" value="Salir">Salir</button>
+</div>
+
+  
+</body>
+</html> 

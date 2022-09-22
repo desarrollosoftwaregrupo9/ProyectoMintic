@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PLATAFORMA GESTION DE CITAS</title>
+        <script src="validacionVista1.js"></script>
+        <link rel="stylesheet" type="text/css" href="EstilosVistaLogin.css"/>
+        
+    </head>
+<body>
+    <center><h1>BIENVENIDOS</h1></center>
+    <center><img src ="logoclinica.png"></center><br>
+
+    <form onsubmit="return validar_formulario();"  method="get" action="" name="formRegistro">
+    
+        <p> Tipo Documento:  
+        <select>
+            <option></option>
+            <option>Cedula Ciudadania</option>
+            <option>Registro Civil</option>
+            <option>Pasaporte</option>
+            <option>Extrangeria</option>
+        </select></p><br>
+
+        <table>
+            <tr>
+              <td align ="right">Numero:</td>
+              <td align="left"><input type="texto" id="numero" name="numero" maxlength="20" placeholder="numero de identificacion"/></td>
+            </tr>
+            <tr>
+              <td align="right">Contraseña:</td>
+              <td align="left"><input type="password" id="password" name="password"/></td>
+            </tr>
+        </table>
+        
+        <p><input type="checkbox" name="recordar" />Recordarme</p>
+
+        <div style ="text-align: center;">
+        <button type="submit" value="Iniciar">INICIAR SESION</button>
+        <br><br><br>
+
+        <button type="submit" value="Registrar">Registrarse</button>
+        
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>

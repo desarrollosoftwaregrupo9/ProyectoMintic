@@ -1,0 +1,75 @@
+.logoclinica {
+    width: 50%;
+}
+
+h2{
+    width: 385px;
+    padding: 10px 33px;
+    font-family: serif;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: #6d9ab8;
+}
+
+ 
+    
+body, html {
+    position:absolute;
+    width: 450px;
+    height: 90%;
+    font-family: serif;
+    margin: 0, auto;
+    background-color: aliceblue;
+}
+
+
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: #6d9ab8;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #6d9ab8;
+}
+
+/* Estilo de button registro */
+.btn {
+  background-color: #6d9ab8;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.MenuPrincipal {
+    background-color: #6d9ab8;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+.btn:hover {
+  opacity: 1;
+}

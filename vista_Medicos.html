@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title charset="utf-8">Vista Médicos</title>
+    <link rel="stylesheet" type="text/css" href="EstiloVistaMedico.css"/>
+ 
+</head>
+<body>
+
+    <h1><img id="imgmed" alt="" src="https://www.comll.cat/es/wp-content/uploads/sites/3/COMLL_Serveis_Home_Vida-Professional.svg" class="ct-image"> MÉDICOS </h1>  
+    <div class="tab">
+        <!-- onclick activa la función o método del script para bloquear la pestaña -->
+        <button id="defaultOpen" class="tablinks" onclick="abrirSeccion(event, 'GestionarCitas')">Gestionar citas</button>
+        <button class="tablinks" onclick="abrirSeccion(event, 'ValorarCitas')" charset="utf-8">Valoración</button>
+    </div>
+    <div id="GestionarCitas" class="tabcontent">
+
+        <form action="" method="get" type="form"></form>
+
+        <p><input type="date" name="fecha"></p>
+        <p><button type="submit">Buscar</button></p>
+        <!-- Se puede hacer un método para ubicar la información en la tabla
+        u otro tipo de elemento que se pueda seleccionar -->
+        <p><table>
+                <caption>Lista de citas</caption>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Documento</th>
+                    <th>Edad</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+                <tr>
+                    <td>Luis Alfonso Escobar Tovar</td>
+                    <td>1143162033</td>
+                    <td>25</td>
+                    <td>25/09/2022</td>
+                    <td>2:00 pm</td>
+                </tr>
+                <tr>
+                    <td>***** ***** *******</td>
+                    <td>********</td>
+                    <td>**</td>
+                    <td>**/**/****</td>
+                    <td>******</td>
+                </tr> 
+                <tr>
+                    <td>***** ***** *******</td>
+                    <td>********</td>
+                    <td>**</td>
+                    <td>**/**/****</td>
+                    <td>******</td>
+                </tr>
+        </table></p>
+       
+    </div>
+    <div id="ValorarCitas" class="tabcontent">
+        <form action="" method="get" type="form"></form>
+        <p>Documento del paciente: 
+            <input type="text" name="id_paciente" id="id_paciente"> 
+            <button type="submit">Buscar</button>
+        </p>
+        <p>
+            <textarea name="" id="hist_clinica" cols="30" rows="10">Se puede cambiar el textarea por otro tipo de elemento para seleccionar la cita a la que modificar la valoración</textarea>
+        </p>
+        <p>
+            <button type="submit" value="Editar">Editar</button>
+            <button type="submit" value="Guardar">Guardar/Aceptar</button>
+        </p>        
+    </div>
+    <br>
+    <button class="salir" type="submit" value="Salir" >Salir</button>
+
+    <!-- El script permite bloquear lo que se ve en una pestaña -->
+<script>
+    function abrirSeccion(evt, seccion) {
+
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(seccion).style.display = "block";
+        evt.currentTarget.className += " active";
+        
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
